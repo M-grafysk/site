@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form2</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      .form2-bg-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  height: 90vh;
+  background-attachment: scroll;
+  background: url(assets/form2-bg.png) no-repeat center center;
+  background-size: contain;
+  /* background: #000; */
+}
+
+.form2-container {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  bottom: 10px;
+  width: 48%;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+.form2-container h2 {
+  margin-top: 0;
+}
+.form2-group {
+  margin-bottom: 8%;
+}
+/* .form2-group label {
+        display: block;
+        font-weight: bold;
+      } */
+.form2-group input,
+.form2-group select {
+  width: 100%;
+  /* padding: 5px; */
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+}
+.form2-group input[type="text"],
+.form2-group input[type="email"],
+.form2-group select[required] {
+  color: var(--neutral-neutral-300, #a7a8a9);
+}
+.form2-group span.required {
+  color: rgb(44, 44, 44);
+  font-weight: bold;
+}
+.form2-btn {
+  justify-content: center;
+  border-radius: 4px;
+  color: var(--neutral-neutral-0, #fff);
+  display: flex;
+  padding: 10px 55px;
+  font-family: Red Hat Display;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: var(
+    --button-gradient,
+    linear-gradient(90deg, #ac5821 0%, #e1722a 100%)
+  );
+}
+
+.form2-group input:focus,
+.form2-group select:focus {
+  outline: none;
+}
+.button-form2 {
+  text-align: center;
+  /* float: right; */
+}
+.form2-bg {
+  background-color:#f8f8f8;
+  padding: 5px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .form2-container {
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 60px;
+    width: 35%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .form2-bg {
+    padding: 2px 0;
+  }
+      .form2-bg-container {
+        margin-bottom: 35vh;
+      }
+      .form2-container {
+    right: 0;
+    position: relative;
+    padding: 20px;
+  }
+  .form2-container:before {
+    content: "";
+    display: block;
+    height: 275px;
+    width: 100%;
+    background: url(assets/form2-bg.png) no-repeat center center;
+    border-radius: 5px;
+    background-size: cover;
+  }
+  .form2-bg-container {
+    background-image: none;
+  }
+  .form2-btn {
+    text-align: center;
+    padding: 10px 83px;
+  }
+  .form-box-cont {
+    background: rgba(255, 255, 255, 0.96);
+  }
+
+  .form2-container {
+    width: 100%;
+  }
+  .form-col {
+    flex: none;
+  }
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div class="form2-bg">
+      <div class="form2-bg-container container">
+        <div class="form2-container">
+          <form
+            class="container form-box-cont bg-dangr rounded-bottom"
+          >
+            <div class="row">
+              <div class="form-col col-md-6">
+                <div class="form2-group">
+                  <label for="first-name"
+                    >Hello, my first name is
+                    <span class="required"> *</span></label
+                  >
+                  <input
+                    class="placeholder"
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                    placeholder=" First Name"
+                  />
+                </div>
+              </div>
+              <div class="form-col col-md-6">
+                <div class="form2-group">
+                  <label for="last-name">my last name is </label>
+                  <input
+                    class="placeholder"
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    placeholder=" Last Name"
+                  />
+                </div>
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="form-col col-md-6">
+                <div class="form2-group">
+                  <label for="contact"
+                    >Contact me on <span class="required"> *</span></label
+                  >
+                  <input
+                    class="placeholder"
+                    type="text"
+                    id="contact"
+                    name="contact"
+                    required
+                    placeholder=" Contact Number"
+                  />
+                </div>
+              </div>
+  
+              <div class="form-col col-md-6">
+                <div class="form2-group">
+                  <label for="email"
+                    >Mail me at <span class="required"> *</span></label
+                  >
+                  <input
+                    class="placeholder"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder=" Email ID"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+  
+            <div class="form2-group">
+              <label for="identity"
+                >Who am I<span class="required"> *</span></label
+              >
+              <select id="identity" name="identity" required>
+                <option value="">My Background</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form2-group">
+              <label for="purpose">Purpose<span class="required"> *</span></label>
+  
+              <select id="purpose" name="purpose" required>
+                <option value="">I need help with</option>
+                <option value="inquiry">Inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="support">Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form2-group">
+              <label for="pin-code">Pin Code</label>
+              <input
+                class="placeholder"
+                type="text"
+                id="pin-code"
+                name="pin-code"
+                placeholder=" my area code"
+              />
+            </div>
+            <div class="form2-group">
+              <label for="message">What do you want to tell us ?</label>
+              <input
+                class="placeholder"
+                type="text"
+                id="message"
+                name="message"
+                placeholder=" type a message "
+              />
+            </div>
+  
+            <div class="button-form2">
+              <button class="form2-btn col-12 col-sm-2 btn border">submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      </div>
+  
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

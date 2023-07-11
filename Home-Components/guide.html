@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guide</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <link rel="stylesheet" href="form3.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+  
+
+.guide-icons {
+    display: flex;
+    margin-top: 40px;
+    gap: 90px;
+
+  }
+
+  .guide-icons div {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      gap: 15px;
+      flex-wrap: wrap;
+      flex-direction: column;
+}
+
+  
+  .g-button {
+    border-radius: 4px;
+    background: var(--button-gradient, linear-gradient(90deg, #AC5821 0%, #E1722A 100%));
+    color: #ffffff;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--neutral-neutral-0, #FFF);
+      text-align: center;
+      font-family: Red Hat Display;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+          }
+  .arrow-chevron-down-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .guide-bg {
+  background-image: url(assets/guide-bg.png);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 750px;
+  position: relative;
+}
+  .guide-card {
+      bottom: 50%;
+      transform: translateY(50%);
+      left: 120px;
+  position: absolute;
+  /* display: flex;
+  flex-wrap: wrap; */
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+ 
+  width: 671px;
+  height: 594px;
+}
+
+.guide-heading{
+  color: var(--brown-primary, #8D4F1F);
+/* Header/36px: Regular */
+font-family: Kugile;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 64px;
+}
+
+.guide-para{
+  color: var(--neutral-neutral-500, #6B7280);
+  /* Body/18px: Regular */
+  font-family: Red Hat Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.g-icon-text{
+  width: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .guide-bg{
+      /* background-image: url("assets/guide-bg.png"); */
+    width: 100%;
+  }
+  .guide-card{
+      width: 90%;
+      left: 50%;
+      transform:translateX(-50%) ;
+      bottom: -60%;
+      height: 100%;
+   
+      /* transform:translateY(0) ; */
+  }
+  .guide-icons{
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0%;
+    justify-content: space-between;
+}
+.guide-icons div {
+    width: 40%;
+}
+}
+
+ </style>
+</head>
+<body>
+  <div class="container-fluid m-0 guide-bg p-0">
+
+        <div class="card p-5 guide-card">
+
+            <h1 class="guide-heading">Get the right guidance to help you choose!</h1>
+            <p class="guide-para mt-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            <div class="guide-icons ">
+              <div>
+                <img class="guide-icon" alt="" src="assets/paint-bucket.png" />
+                <p class="g-icon-text">Choose the right product</p>
+              </div>
+              <div>
+                <img class="guide-icon" alt="" src="assets/info.png" />
+                <p  class="g-icon-text">Application Guide</p>
+              </div>
+              <div>
+                <img class="guide-icon" alt="" src="assets/wood.png" />
+                <p  class="g-icon-text">Know more about wood</p>
+              </div>
+            </div>
+            <div class="guide-button mt-3">
+              <button class="g-button">Product Guide  <img class="arrow-chevron-down-icon" alt="" src="assets/arrow-long.svg" />
+              </button>
+            </div>
+          </div>
+    </div>
+</div>
+    
+  
+</body>
+</html>

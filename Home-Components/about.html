@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>About</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <link rel="stylesheet" href="about-form.css">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    
+
+    .about-container{
+        background: #f9f9f9;
+        padding: 42px 0;
+      }
+      .about-icons {
+        display: flex;
+        margin-top: 40px;
+        gap: 90px;
+    
+      }
+    
+      .about-icons div {
+          display: flex;
+          justify-content: start;
+      align-items: start;
+      gap: 15px;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    
+      
+      .a-button {
+        border-radius: 4px;
+        background: var(--button-gradient, linear-gradient(90deg, #AC5821 0%, #E1722A 100%));
+        color: #ffffff;
+        padding: 10px 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: var(--neutral-neutral-0, #FFF);
+          text-align: center;
+          font-family: Red Hat Display;
+          font-size: 14px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+              }
+      .arrow-chevron-down-icon {
+        width: 20px;
+        height: 20px;
+      }
+      .about-bg{
+        background-image: url("assets/about-bg.png");
+        background-position: center center;
+          /* background-size: cover; */
+            width: 985px;
+            height: 616px;
+          position: relative;
+          background-repeat: no-repeat;
+          margin-right: 50px;
+        margin-left: auto;
+      }
+    
+      .about-card {
+        bottom: 50%;
+        transform: translateY(50%);
+        left: -251px;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,.125);
+        width: 593px;
+        height: 564px;
+    }
+    
+    .about-heading{
+      color: var(--brown-primary, #8D4F1F);
+    /* Header/36px: Regular */
+    font-family: Kugile;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px;
+    }
+    
+    .about-para {
+      color: var(--neutral-neutral-500, #6B7280);
+      /* Body/18px: Regular */
+      font-family: Red Hat Display;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+    }
+    .about-icon-text{
+      width: 100px;
+    }
+    
+    @media only screen and (max-width: 768px) {
+     .about-container{ 
+      padding: 12px 0;
+      margin-bottom: 60vh;
+    }
+      .about-bg{
+          /* background-image: url("assets/M-about-bg.png"); */
+        width: 100%;
+        background-size: cover;
+      }
+      .about-card{
+          width: 90%;
+          left: 50%;
+          transform:translateX(-50%) ;
+          /* top: 40%; */
+          bottom: -60%;
+          height: 130%;
+       
+          /* transform:translateY(0) ; */
+      }
+      .about-icons{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0%;
+        justify-content: space-between;
+    }
+    .about-icons div {
+        width: 40%;
+        
+    }
+    }
+</style>
+</head>
+<body>
+
+
+  <div class="about-container">
+
+    <div class="container-fluid about-bg">
+      <div class="card p-4 about-card">
+
+          <h1 class="about-heading">About Company</h1>
+          <p class="about-para "> </p>A home is a symbol of aspirations, and our intention is to enhance it with durable coatings that withstand the passage of time.</p>
+
+          Allwood is a range of luxury wood finishes from Grasim Industries Ltd (Birla Paints Div.) which is part of the Aditya Birla Group, a global conglomerate, in the league of Fortune 500 companies. The Allwood range of wood finishes incorporates the latest Italian technology and would strive to bring consumers the highest standards of quality and finesse.
+          <div class="about-icons ">
+            <div>
+              <img class="about-icon" alt="" src="assets/paint-bucket.png" />
+              <p class="about-icon-text">Choose the right product</p>
+            </div>
+            <div>
+              <img class="about-icon" alt="" src="assets/info.png" />
+              <p  class="about-icon-text">Application Guide</p>
+            </div>
+            <div>
+              <img class="about-icon" alt="" src="assets/wood.png" />
+              <p  class="about-icon-text">Know more about wood</p>
+            </div>
+          </div>
+          <div class="about-button mt-4">
+            <button class="a-button">Product Guide  <img class="arrow-chevron-down-icon" alt="" src="assets/arrow-long.svg" />
+            </button>
+          </div>
+        </div>
+  </div>
+</div>
+</div>
+  
+</body>
+</html>

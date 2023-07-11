@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!------------------------------------------------------------------------------------ 
+      Bootstrap - CSS
+    -------------------------------------------------------------------------------------->
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- font-awesome search-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Banner</title>
+    <style>
+      
+      /* -------------------------------------------------------------------------
+      # Banner - Section 
+      -------------------------------------------------------------------------*/
+
+      .navbar .navbar-nav li a {
+        font-size: 0.9rem;
+      }
+      .navbar-transparent {
+        background-color: transparent !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        width: 80%;
+        margin: 0 0 0 10%;
+      }
+
+      .navSearchButton {
+        padding-left: 0.5rem;
+        margin-top: 0.7rem;
+      }
+
+      .menu-toggle-btn {
+        height: 32px;
+        width: 32px;
+      }
+
+      .navbar-toggler {
+        border: none;
+      }
+      
+      /* -------------------------------------------------------------------------
+      # Carousel
+      -------------------------------------------------------------------------*/
+
+      .header-carousel {
+        position: relative;
+        z-index: 1;
+      }
+
+      .slider-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 0;
+      }
+
+      .carousel-indicators [data-bs-target] {
+        box-sizing: content-box;
+        flex: 0 1 auto;
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        margin-right: 3px;
+        margin-left: 3px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #000000;
+        background-clip: padding-box;
+        border: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        /* opacity: .5; */
+        transition: opacity 0.6s ease;
+        border-radius: 100%;
+      }
+
+      .carousel-indicators .active {
+        background-color: #ffffff;
+      }
+
+      .slider-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 530px;
+        overflow: hidden;
+      }
+
+      .slider-img {
+        width: 100%;
+      }
+
+      .slider-container {
+        height: 530px;
+        overflow: hidden;
+      }
+      .nav-text {
+        color: var(--neutral-neutral-300, #d1d5db);
+        /* Body/14px: Regular */
+        font-size: 14px;
+        font-family: Red Hat Display;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      .nav-text:hover {
+        color: var(--neutral-neutral-300, #d1d5db);
+        /* Body/14px: Regular */
+        font-size: 14px;
+        font-family: Red Hat Display;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      .nav-text:visited {
+        color: var(--neutral-neutral-300, #d1d5db);
+        /* Body/14px: Regular */
+        font-size: 14px;
+        font-family: Red Hat Display;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      .banner-text {
+        position: absolute;
+        z-index: 2;
+        color: var(--neutral-neutral-50, #f9fafb);
+
+        /* Header/54px: Regular */
+        font-size: 54px;
+        font-family: Kugile;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 80px;
+      }
+      
+      @media (max-width: 768px) {
+        .ab-logo {
+          height: 32px;
+          width: 30px;
+        }
+        .aw-logo {
+          height: 22px;
+          width: 95px;
+        }
+        .carousel-indicators {
+          display: none;
+        }
+        .carousel-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .slider-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 486px;
+          overflow: hidden;
+        }
+
+        .slider1 {
+          width: auto;
+          height: 486px;
+          position: relative;
+          left: 50%;
+          right: 50%;
+          transform: translateX(-50%);
+        }
+        .banner-text {
+          position: absolute;
+          z-index: 2;
+          color: var(--neutral-neutral-50, #F9FAFB);
+          text-align: center;
+
+          /* Header/44px: Regular */
+          font-size: 44px;
+          font-family: Kugile;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 72px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!------------------------------------------------------------------------------------ 
+      Banner - Section
+    -------------------------------------------------------------------------------------->
+    
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-transparent">
+        <a class="navbar-brand" href="#">
+          <img src="assets/header-ab-logo.png" class="img-fluid ab-logo" alt="" />
+          <img
+          src="assets/header-aw-logo.png"
+            class="img-fluid aw-logo mx-2"
+            alt=""
+          />
+        </a>
+        <span
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <img src="assets/menu-2.png" class="menu-toggle-btn" alt="" />
+        </span>
+        <div class="collapse navbar-collapse" id="">
+          <ul class="navbar-nav header ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="#">Inspiration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="#">Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="#">Store Locator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="#">Find a Contractor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="#">Contact us</a>
+            </li>
+            <li class="nav-item justify-content-center">
+              <i
+              class="fa-solid fa-magnifying-glass navSearchButton text-light"
+              ></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    
+    <!------------------------------------------------------------------------------------ 
+      Carousel
+    -------------------------------------------------------------------------------------->
+    
+    <div id="carouselExampleIndicators" class="carousel slide slider-container">
+      <div class="carousel-indicators">
+        <button
+        type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+          ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+          ></button>
+          <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+          ></button>
+          <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+          ></button>
+      </div>
+      
+      <div class="banner-text">Bring Italy to Your Home</div>
+      
+      <div class="carousel-inner sec-1-carousel-inner-image">
+        <div class="carousel-item active">
+          <img
+            src="assets/banner.jpg"
+            class="slider-img slider1 d-md-block"
+            alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+            src="assets/banner.jpg"
+            class="slider-img d-none d-md-block"
+            alt="..."
+            />
+          </div>
+        <div class="carousel-item">
+          <img
+            src="assets/banner.jpg"
+            class="slider-img d-none d-md-block"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/banner.jpg"
+            class="slider-img d-none d-md-block"
+            alt="..."
+            />
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+      Carousel
+    -------------------------------------------------------------------------------------->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      // Wait for the document to load
+      $(document).ready(function () {
+        // Check the screen size on window resize
+        $(window).resize(function () {
+          checkScreenSize();
+        });
+
+        // Check the initial screen size
+        checkScreenSize();
+
+        // Function to check the screen size and initialize the carousel accordingly
+        function checkScreenSize() {
+          if (window.innerWidth >= 768) {
+            // Initialize the carousel with sliding properties
+            $("#carouselExampleIndicators").carousel({
+              interval: 5000, // Slide every 5 seconds
+              ride: true, // Enable sliding
+            });
+          } else {
+            // Disable sliding for smaller screens
+            $("#carouselExampleIndicators").carousel("pause");
+          }
+        }
+      });
+    </script>
+
+    <!------------------------------------------------------------------------------------ 
+      Bootstrap - JS
+    -------------------------------------------------------------------------------------->
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>

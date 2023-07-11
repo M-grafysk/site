@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert</title>
+    <style>
+        /* ##############     EXPERT css starts       ###################### */
+
+ 
+ section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;  
+  }
+  
+  article {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 500px;
+    border-radius: 2px;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0.9;
+    transition: 0.5s;  
+  }
+  
+  article.active {
+    width: 600px;
+    opacity: 1;
+  }
+  
+  article .material-symbols-outlined {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    font-size: 28px;
+  }
+  
+  article .expert-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    padding: 19px 0 18px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(29, 24, 28, 0.90);      transition: 0.25s;
+    transform: translateY(100%);
+  }
+  
+  article:hover .expert-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  article img {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150%; 
+  }
+  
+  article .expert-content-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 0; /* Add margin to prevent overlapping with the image */
+    color: var(--neutral-neutral-0, #FFF);
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px
+  }
+  
+  article .expert-content-paragraph {
+      color: var(--neutral-neutral-300, #D1D5DB);
+      font-size: 14px;
+  }
+  
+  article .expert-button {
+      border-radius: 4px;
+      border: none;
+      display: flex;
+      padding: 10px 30px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      background: var(--button-gradient, linear-gradient(90deg, #AC5821 0%, #E1722A 100%));
+      color: #FFF;
+  }
+  
+  .expert-heading {
+    color: var(--brown-primary, #8D4F1F);
+    text-align: center;
+    font-size: 36px;
+    font-family: Kugile;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px;
+  }
+  
+  .expert-sub-heading {
+    color: var(--neutral-neutral-500, #6B7280);
+    text-align: center;
+    font-size: 18px;
+    font-family: Red Hat Display;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+
+ /* ##############     EXPERT css starts       ######################  */
+    </style>
+</head>
+<body>
+    <!-- ##############     EXPERT html starts       ###################### -->
+
+    <div class="container">
+        <div class="expert-main-heading text-center">
+          <h1 class="expert-heading">Get Expert Help at Your Convenience</h1>
+          <p class="expert-sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.</p>
+        </div>
+        <section>
+          <article>
+            <img src="assets/dealer.jpg" alt="Canada" />
+            <div class="expert-content">
+              <h2 class="expert-content-heading">Dealers</h2>
+              <p class="expert-content-paragraph">This project required a huge amount of hours but sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+              <button class="expert-button">Explore More</button>
+            </div>
+          </article>
+          <article>
+            <img src="assets/Paintcontractors.jpg" alt="Bali" />
+            <div class="expert-content">
+              <h2 class="expert-content-heading">Paint Contractors</h2>
+              <p class="expert-content-paragraph">This project required a huge amount of hours but sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+              <button class="expert-button">Explore More</button>
+            </div>
+          </article>
+          <article>
+            <img src="assets/Site-visit.jpg" alt="Indonesia" />
+            <div class="expert-content">
+              <h2 class="expert-content-heading">Site Visit</h2>
+              <p class="expert-content-paragraph">This project required a huge amount of hours but sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+              <button class="expert-button">Explore More</button>
+            </div>
+          </article>
+        </section>
+      </div>
+
+
+<!--% EXPERT JS % -->
+
+
+      <script>
+        const articles = document.querySelectorAll("article");
+      
+        articles.forEach((article) => {
+          article.addEventListener("mouseover", () => {
+            article.classList.add("active");
+          });
+      
+          article.addEventListener("mouseout", () => {
+            article.classList.remove("active");
+          });
+        });
+      </script>
+</body>
+</html>
