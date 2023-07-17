@@ -1,3 +1,154 @@
+/* 1nd  font */
+
+@font-face {
+  font-family: "font-red-hat-bold";
+  src: url("font-red-hat/RedHatDisplay-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "font-red-hat-medium";
+  src: url("font-red-hat/RedHatDisplay-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "font-red-hat-regular";
+  src: url("font-red-hat/RedHatDisplay-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "font-red-hat-light";
+  src: url("font-red-hat/RedHatDisplay-Light.ttf") format("truetype");
+}
+/* 2nd  font */
+
+@font-face {
+  font-family: "font-kugi";
+  src: url("font-kuglile/Kugile_Demo.ttf") format("truetype");
+}
+
+/* -------------------------------------------------------------------------
+      # Navbar - Section 
+      -------------------------------------------------------------------------*/
+
+      .navbar {
+        background-color: transparent ;
+      }
+      
+      .nav .navbar-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 22px;
+        justify-content: space-evenly;
+      color: var(--neutral-neutral-300, #ffffff);
+      text-align: center;
+      
+      /* Body/14px: Regular */
+      font-family: "font-red-hat-regular";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 171.429% */
+      }
+      
+      .navbar-toggler-icon {
+        transition: transform 0.3s ease-in-out;
+        /* filter: grayscale(100%) sepia(100%) hue-rotate(298deg) brightness(0.7); */
+        filter: brightness(1) contrast(0);
+      }
+      
+      .nav .nav-link {
+        color: var(--neutral-neutral-500, #6b7280);
+        text-align: right; /* Align link text to the right */
+        /* Body/18px: Medium */
+        font-family: "font-red-hat-medium";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 155.556% */
+        margin: 20px;
+      }
+      
+      .search-icon {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        color: var(--neutral-neutral-500, #6b7280);
+      }
+      
+      .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #6b7280;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        width: 160%;
+      }
+      
+      .search-input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        width: 100%;
+        padding: 0 5px;
+      }
+      .nav .navbar-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+        justify-content: space-evenly;
+        color: var(--neutral-neutral-300, #ffffff);
+        text-align: center;
+        font-family: "font-red-hat-regular";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      
+      @media (min-width: 992px) {
+        .navbar-expand-lg .navbar-collapse {
+          display: flex !important;
+          flex-basis: auto;
+          flex-direction: row-reverse;
+        }
+        .navbar-expand-lg .navbar-nav .nav-link {
+          padding-right: var(--bs-navbar-nav-link-padding-x);
+          padding-left: var(--bs-navbar-nav-link-padding-x);
+          margin: 8px;
+        }
+      }
+      
+      @media only screen and (max-width: 768px) {
+        .navbar {
+          background: #FFF;
+          box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+          /* height: 450px; */
+      }
+      
+      .aw-logo {
+        filter: brightness(0.75) contrast(0.9) sepia(0.2);
+        mix-blend-mode: multiply;
+      }
+        
+      
+        .nav .navbar-links {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+          justify-content: space-evenly;
+        }
+      
+        .nav .nav-link {
+          color: var(--neutral-neutral-500, #6b7280);
+          text-align: left;
+          font-family: Red Hat Display;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+      }
+      }
+
 
 /* -------------------------------------------------------------------------
       # Banner - Section
