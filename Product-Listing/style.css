@@ -1,0 +1,717 @@
+/* 1nd  font */
+
+@font-face {
+  font-family: "font-red-hat-bold";
+  src: url("font-red-hat/RedHatDisplay-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "font-red-hat-medium";
+  src: url("font-red-hat/RedHatDisplay-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "font-red-hat-regular";
+  src: url("font-red-hat/RedHatDisplay-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "font-red-hat-light";
+  src: url("font-red-hat/RedHatDisplay-Light.ttf") format("truetype");
+}
+/* 2nd  font */
+
+@font-face {
+  font-family: "font-kugi";
+  src: url("font-kuglile/Kugile_Demo.ttf") format("truetype");
+}
+
+/* -------------------------------------------------------------------------
+      # Navbar - Section 
+      -------------------------------------------------------------------------*/
+
+      .navbar {
+        background-color: transparent ;
+      }
+      
+      .nav .navbar-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 22px;
+        justify-content: space-evenly;
+      color: var(--neutral-neutral-300, #ffffff);
+      text-align: center;
+      
+      /* Body/14px: Regular */
+      font-family: "font-red-hat-regular";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 171.429% */
+      }
+      
+      .navbar-toggler-icon {
+        transition: transform 0.3s ease-in-out;
+        /* filter: grayscale(100%) sepia(100%) hue-rotate(298deg) brightness(0.7); */
+        filter: brightness(1) contrast(0);
+      }
+      
+      .nav .nav-link {
+        color: var(--neutral-neutral-500, #6b7280);
+        text-align: right; /* Align link text to the right */
+        /* Body/18px: Medium */
+        font-family: "font-red-hat-medium";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 155.556% */
+        margin: 20px;
+      }
+      
+      .search-icon {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        color: var(--neutral-neutral-500, #6b7280);
+      }
+      
+      .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #6b7280;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        width: 160%;
+      }
+      
+      .search-input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        width: 100%;
+        padding: 0 5px;
+      }
+      .nav .navbar-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+        justify-content: space-evenly;
+        color: var(--neutral-neutral-300, #ffffff);
+        text-align: center;
+        font-family: "font-red-hat-regular";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      
+      @media (min-width: 992px) {
+        .navbar-expand-lg .navbar-collapse {
+          display: flex !important;
+          flex-basis: auto;
+          flex-direction: row-reverse;
+        }
+        .navbar-expand-lg .navbar-nav .nav-link {
+          padding-right: var(--bs-navbar-nav-link-padding-x);
+          padding-left: var(--bs-navbar-nav-link-padding-x);
+          margin: 8px;
+        }
+      }
+      
+      @media only screen and (max-width: 768px) {
+        .navbar {
+          background: #FFF;
+          box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+          /* height: 450px; */
+      }
+      
+      .aw-logo {
+        filter: brightness(0.75) contrast(0.9) sepia(0.2);
+        mix-blend-mode: multiply;
+      }
+        
+      
+        .nav .navbar-links {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+          justify-content: space-evenly;
+        }
+      
+        .nav .nav-link {
+          color: var(--neutral-neutral-500, #6b7280);
+          text-align: left;
+          font-family: Red Hat Display;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+      }
+      }
+      
+/* -------------------------------------------------------------------------
+      # Banner - Section
+      -------------------------------------------------------------------------*/
+      .aw-banner {
+        background-image: url('assets/aw-banner1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 400px; /* Adjust the height as per your requirement */
+        display: flex;
+        align-items: center;
+        padding: 20px;
+      }
+  
+  
+      .aw-BannerHeading{
+        font-size: 32px;
+        color: white;
+        color: var(--neutral-neutral-800, #1F2937);
+  
+        /* Header/54px: Regular */
+        font-family: "font-Kugi";
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 80px; /* 148.148% */
+      }
+  
+      .aw-BannerPara {
+      font-size: 18px;
+      color: white;
+      height: auto;
+      color: var(--neutral-neutral-700, #374151);
+  
+      /* Body/14px: Medium */
+      font-family:"font-red-hat-medium";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px; /* 171.429% */
+  }
+  @media (max-width: 768px) {
+    .aw-banner {
+      height: 530px;
+    }
+  }
+
+
+/* -------------------------------------------------------------------------
+      # Form1 - Section 
+      -------------------------------------------------------------------------*/
+
+      .form1-container {
+        padding-left: 14%;
+      }
+      
+      .form1-head {
+        color: var(--brown-primary, #8d4f1f);
+      
+        /* Body/23px: Bold */
+        font-size: 23px;
+        font-family: "font-red-hat-bold", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+      }
+      
+      .form1-text {
+        color: var(--neutral-neutral-600, #4b5563);
+      
+        /* Body/14px: Regular */
+        font-size: 14px;
+        font-family: "font-red-hat-regular", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      
+      .form1-inputlist {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        gap: 16px;
+        color: var(--neutral-neutral-400, #9ca3af);
+      
+        /* Body/14px: Regular */
+        font-family: Red Hat Display;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 171.429% */
+      }
+      
+      .form1-placeholder {
+        color: var(--neutral-neutral-400, #9ca3af);
+      
+        /* Body/14px: Regular */
+        font-family: "font-red-hat-regular", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      
+      .form1-inputcontainer {
+        width: 100%;
+        position: relative;
+      }
+      
+      .form1-inputcontainer input:focus + label {
+        top: 0px;
+        left: 10px;
+        font-size: 12px;
+        color: #888;
+        background-color: #ffffff;
+        padding: 0 5px;
+      }
+      
+      .form-control:focus,
+      .form-control.form-control:focus {
+        box-shadow: none;
+        border: 1px solid var(--neutral-neutral-300, #d1d5db);
+      }
+      
+      .form1-inp {
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid var(--neutral-neutral-300, #d1d5db);
+        background: var(--neutral-neutral-0, #fff);
+      }
+      
+      .form1-inputcontainer label {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        transition: all 0.2s ease;
+        pointer-events: none;
+        color: var(--neutral-neutral-400, #9ca3af);
+      
+        /* Body/14px: Regular */
+        font-family: "font-red-hat-regular";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 171.429% */
+      }
+      .form1-contact:hover {
+        color: var(--neutral-neutral-0, #fff);
+      }
+      .form1-contact {
+        display: flex;
+        padding: 8px 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 4px;
+        background: var(
+          --button-gradient,
+          linear-gradient(90deg, #ac5821 0%, #e1722a 100%)
+        );
+      
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+      
+        color: var(--neutral-neutral-0, #fff);
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      
+        /* CTA/12px: Medium */
+        font-family: "font-red-hat-medium", sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .form1-inp:focus {
+        border-color: #ced4da; /* Set the desired border color on focus */
+        outline: none; /* Remove the default outline */
+        box-shadow: none; /* Remove the default box shadow */
+      }
+      
+      @media (max-width: 991px) {
+        .form1-container {
+          padding-left: 35px;
+        }
+      }
+      
+
+
+/* -------------------------------------------------------------------------
+      # Register - Section
+      -------------------------------------------------------------------------*/
+      .register-heading {
+        color: var(--brown-primary, #8d4f1f);
+      
+        /* Header/36px: Regular */
+        font-family: "font-kugi";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 64px;
+        margin-left: 30px;
+      }
+      
+      .register-para {
+        color: var(--neutral-neutral-700, #374151);
+      
+        /* Body/18px: Medium */
+        font-family: "font-red-hat-regular";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        color: var(--neutral-neutral-700, #374151);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+      
+        margin-left: 30px;
+      }
+      
+      .register-bg {
+        background: url(assets/register-bg.png);
+        background-repeat: no-repeat;
+      }
+      
+      .register-main-btn {
+        display: flex;
+        padding: 10px 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10%;
+        border-radius: 4px;
+        border: none;
+        background: var(
+          --button-gradient,
+          linear-gradient(90deg, #ac5821 0%, #e1722a 100%)
+        );
+      }
+      .register-floattext{
+        float: left;
+
+      }
+      .register-floatbtn{
+        float: right;
+      }
+      .register-btn {
+        color: var(--neutral-neutral-0, #fff);
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      
+        /* CTA/14px: Medium */
+        font-family: Red Hat Display;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .register-heading {
+          color: var(--brown-primary, #8d4f1f);
+      
+          /* Header/36px: Regular */
+          font-family: "font-kugi";
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 64px;
+          margin-left: 0;
+        }
+        .register-para {
+          color: var(--neutral-neutral-700, #374151);
+      
+          /* Body/18px: Medium */
+          font-family: "font-red-hat-regular";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px;
+          color: var(--neutral-neutral-700, #374151);
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px;
+          margin-left: 0;
+        }
+      }
+      /* -------------------------------------------------------------------------
+            # Testimonials - Section
+            -------------------------------------------------------------------------*/
+      
+      /* owl-carousel */
+      .testimonials-carousel .card {
+        box-shadow: none !important;
+      }
+      
+      .testimonials-carousel .owl-theme .owl-dots .owl-dot span {
+        background: none;
+        border: 2px solid rgb(161, 161, 161);
+      }
+      
+      .testimonials-carousel .owl-theme .owl-dots .owl-dot.active span,
+      .testimonials-carousel .owl-theme .owl-dots .owl-dot:hover span {
+        border: 0px solid #000000;
+        background: rgb(132, 43, 5) !important;
+      }
+      
+      .testimonials-carousel .owl-carousel .owl-nav {
+        position: absolute;
+        top: 93%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 17%;
+      }
+      
+      .testimonials-carousel .owl-carousel .owl-nav .owl-prev,
+      .testimonials-carousel .owl-carousel .owl-nav .owl-next {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .testimonials-carousel .owl-carousel .owl-nav .owl-prev img,
+      .testimonials-carousel .owl-carousel .owl-nav .owl-next img {
+        width: 30px;
+        height: 30px;
+      }
+      
+      .testimonials-carousel .owl-carousel .owl-nav .owl-prev {
+        left: 20px;
+      }
+      
+      .testimonials-carousel .owl-carousel .owl-nav .owl-next {
+        right: 20px;
+      }
+      
+      .row > * {
+        padding-right: 0;
+        padding-left: 0;
+      }
+      
+      /* custom css */
+      
+      .testimonial-heading {
+        text-align: center;
+        color: #805a50;
+        color: var(--brown-primary, #966239);
+        /* Header/36px: Regular */
+        font-family: "font-kugi";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 64px; /* 177.778% */
+      }
+      
+      .testimonial-subheading {
+        text-align: center;
+        color: var(--neutral-neutral-600, #4b5563);
+        text-align: center;
+      
+        /* Body/18px: Regular */
+        font-family: "font-red-hat-regular";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 155.556% */
+      }
+      
+      .testimonial-card {
+        width: 100%;
+        /* height: 258px; */
+        border-radius: 10px;
+        background: rgba(172, 171, 171, 0.105);
+        /* filter: blur(1.2px); */
+        /* transition: filter 0.3s ease-in-out; */
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Add box shadow properties */
+      }
+      
+      .testimonial-text {
+        font-size: 1.3rem;
+      }
+      
+      .testimonial-profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .testimonial-profile img {
+        width: 20px;
+        height: 64px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      
+      .testimonial-name {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+      }
+      
+      .testimonial-role {
+        font-size: 14px;
+        margin: 0;
+      }
+      
+      .testimonial-rating {
+        display: inline;
+        height: 10px;
+        width: 20px;
+      }
+      
+      .fa-star {
+        color: #ffd700;
+        font-size: 12px;
+      }
+      
+      .checked {
+        color: #ffbb00;
+      }
+      
+
+/* -------------------------------------------------------------------------
+      # Footer - Section
+      -------------------------------------------------------------------------*/
+
+.footer {
+  background: #1e1916;
+  color: #d9d9d9;
+  font-family: "font-red-hat-regular", sans-serif;
+}
+.footer-main {
+  padding: 20px;
+}
+
+.footer-logo1 {
+  margin-right: 10px;
+}
+
+.footer-column {
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  margin-top: 24px;
+}
+.footer-description {
+  margin-top: 24px;
+  color: var(--neutral-neutral-300, #d1d5db);
+
+  /* Body/12px: Regular */
+  font-family: "font-red-hat-medium", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.footer-social-icons {
+  margin-top: 10px;
+}
+.footer-head {
+  color: #d9d9d9;
+
+  /* Body/14px: Medium */
+  font-family: "font-red-hat-medium", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.footer-links li {
+  list-style: none;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #909090;
+
+  /* Body/14px: Regular */
+  font-family: "font-red-hat-regular", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer-link {
+  margin-top: 25px;
+  line-height: 30px;
+}
+
+.footer-terms {
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-terms-row {
+  background: #171311;
+}
+ul {
+  padding-left: 0rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+
+  margin-top: 16px;
+}
+
+.social-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(100%);
+}
+
+.footer-terms-row {
+  color: #d9d9d9;
+
+  /* Body/14px: Medium */
+  font-family: "font-red-hat-medium", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@media (max-width: 768px) {
+  .footer-terms-row {
+    color: #d9d9d9;
+
+    /* Body/12px: Medium */
+    font-family: "font-red-hat-medium", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}

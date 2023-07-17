@@ -29,38 +29,136 @@
 
     <style>
 
+      /* 1nd  font */
+
+@font-face {
+  font-family: 'font-red-hat-bold';
+  src: url('font-red-hat/RedHatDisplay-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'font-red-hat-medium';
+  src: url('font-red-hat/RedHatDisplay-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'font-red-hat-regular';
+  src: url('font-red-hat/RedHatDisplay-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'font-red-hat-light';
+  src: url('font-red-hat/RedHatDisplay-Light.ttf') format('truetype');
+}
+/* 2nd  font */
+
+@font-face {
+  font-family: 'font-kugi';
+  src: url('font-kuglile/Kugile_Demo.ttf') format('truetype');
+}
+
+
+.aw-heading{
+  color: var(--brown-primary, #966239);
+
+    /* Body/35px: Regular */
+    font-family: 'font-red-hat-regular', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 137.143% */
+}
+.aw-heading2{
+  color: var(--brown-primary, #966239);
+
+  /* Body/35px: Bold */
+  font-family: 'font-red-hat-bold', sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 137.143% */
+}
+.aw-para{
+  color: var(--neutral-neutral-800, #1F2937);
+
+  /* Body/18px: Regular */
+  font-family: 'font-red-hat-regular', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+
+@media (max-width: 768px) {
+.aw-image{
+  width: 100%;
+  height: auto;
+}
+.aw-heading{
+  color: var(--brown-primary, #966239);
+
+    /* Body/35px: Regular */
+    font-family: 'font-red-hat-regular', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 137.143% */
+}
+
+.aw-heading2{
+  color: var(--brown-primary, #966239);
+
+  /* Body/35px: Bold */
+  font-family: 'font-red-hat-bold', sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 137.143% */
+}
+.aw-para{
+  color: var(--neutral-neutral-800, #1F2937);
+
+/* Body/14px: Regular */
+font-family: Red Hat Display;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+}
+
+
+}
+
+
     </style>
   </head>
 
   <body>
     <div class="container p-5">
       <div class="row">
-        <h1 class="mb-2">About Allwood</h1>
-        <p>
+        <h1 class="aw-heading mb-2">About <span class="aw-heading2">Allwood</span> </h1>
+        <p class="aw-para">
           Allwood is a range of luxury wood finishes from Grasim Industries Ltd (Birla Paints Div.) which is part of the Aditya Birla Group, a global conglomerate, in
           the league of Fortune 500 companies. The Allwood range of wood finishes incorporates the latest Italian technology and would strive to bring
           consumers the highest standards of quality and finesse.
         </p>
-        <p>
+        <p class="aw-para">
           Our products have been formulated at ALCEA, Italy keeping in mind the latest trends in the Indian Wood Coatings market. A home  is a symbol of
           aspirations, and our intention is to enhance it with durable coatings that withstand the passage of time.
         </p>
-        <p>
+        <p class="aw-para">
           Our vision is to offer real guidance and support to consumers so that they can choose the best wood coating solutions for their dream home
         </p>
       </div>
       <div class="row mt-3">
-        <div class="col-6 col-md-3 p-2">
-          <div class="p-5 bg-info rounded"></div>
+        <div class="col-6 col-md-3 ">
+            <img class="aw-image rounded" src="assets/about-awb1.png" alt="">
         </div>
-        <div class="col-6 col-md-3 p-2 mt-5">
-          <div class="p-5 bg-info rounded"></div>
+        <div class="col-6 col-md-3  mt-5">
+            <img class="aw-image rounded" src="assets/about-aw2.png" alt="">
         </div>
-        <div class="col-6 col-md-3 p-2">
-          <div class="p-5 bg-info rounded"></div>
+        <div class="col-6 col-md-3 ">
+            <img class="aw-image rounded" src="assets/about-aw3.png" alt="">
         </div>
-        <div class="col-6 col-md-3 p-2 mt-5">
-          <div class="p-5 bg-info rounded"></div>
+        <div class="col-6 col-md-3  mt-5">
+            <img class="aw-image rounded" src="assets/about-aw4.png" alt="">
         </div>
       </div>
     </div>

@@ -1,397 +1,625 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- font-links -->
-      <link
-         rel="stylesheet"
-         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
-         />
-      <link
-         rel="stylesheet"
-         href="https://fonts.googleapis.com/css2?family=Kugile:wght@400&display=swap"
-         />
-      <link
-         rel="stylesheet"
-         href="https://fonts.googleapis.com/css2?family=Red Hat Display:wght@300;400;500;700&display=swap"
-         />
-      <!-- bootstrap -->
-      <link
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-         rel="stylesheet"
-         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-         crossorigin="anonymous"
-         />
-      <!-- font-awesome search-icon -->
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-         />
-      <link rel="stylesheet" href="index.css" />
-      <title>Allwood</title>
-   </head>
-   <body>
-      <!------------------------------------------------------------------------------------ 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font-links -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kugile:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Red Hat Display:wght@300;400;500;700&display=swap"
+    />
+
+    <!-- font-awesome search-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <!-- OwlCarousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>About US</title>
+  </head>
+  <body>
+   <!------------------------------------------------------------------------------------ 
          Navbar - Section
          -------------------------------------------------------------------------------------->
-      <div class="container-fluid">
-         <nav class="navbar navbar-expand-lg navbar-transparent">
-            <a class="navbar-brand" href="#">
-            <img src="assets/header-ab-logo.png" class="img-fluid ab-logo" alt="" />
-            <img
-               src="assets/header-aw-logo.png"
-               class="img-fluid aw-logo mx-2"
-               alt=""
-               />
-            </a>
-            <span
-               class="navbar-toggler"
-               data-bs-toggle="collapse"
-               data-bs-target="#navbarNav"
-               aria-controls="navbarNav"
-               aria-expanded="false"
-               aria-label="Toggle navigation"
-               >
-            <img src="assets/menu-2.png" class="menu-toggle-btn" alt="" />
-            </span>
-            <div class="collapse navbar-collapse" id="navbarNav">
-               <ul class="navbar-nav header ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                     <a class="nav-link nav-text" href="#">Inspiration</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link nav-text" href="#">Products</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link nav-text" href="#">About us</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link nav-text" href="#">Tools</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link nav-text" href="#">Store Locator</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link nav-text" href="#">Find a Contractor</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link nav-text" href="#">Contact us</a>
-                  </li>
-                  <li class="nav-item justify-content-center">
-                     <i
-                        class="fa-solid fa-magnifying-glass navSearchButton text-light"
-                        ></i>
-                  </li>
-               </ul>
-            </div>
-         </nav>
-      </div>
-      <!------------------------------------------------------------------------------------ 
-         Carousel
-         -------------------------------------------------------------------------------------->
-      <div id="carouselExampleIndicators" class="carousel slide slider-container">
-         <div class="carousel-indicators">
-            <button
-               type="button"
-               data-bs-target="#carouselExampleIndicators"
-               data-bs-slide-to="0"
-               class="active"
-               aria-current="true"
-               aria-label="Slide 1"
-               ></button>
-            <button
-               type="button"
-               data-bs-target="#carouselExampleIndicators"
-               data-bs-slide-to="1"
-               aria-label="Slide 2"
-               ></button>
-            <button
-               type="button"
-               data-bs-target="#carouselExampleIndicators"
-               data-bs-slide-to="2"
-               aria-label="Slide 3"
-               ></button>
-            <button
-               type="button"
-               data-bs-target="#carouselExampleIndicators"
-               data-bs-slide-to="3"
-               aria-label="Slide 4"
-               ></button>
-         </div>
-         <div class="banner-text">Bring Italy to Your Home</div>
-         <div class="carousel-inner sec-1-carousel-inner-image">
-            <div class="carousel-item active">
-               <img
-                  src="assets/banner.jpg"
-                  class="slider-img slider1 d-md-block"
-                  alt="..."
-                  />
-            </div>
-            <div class="carousel-item">
-               <img
-                  src="assets/banner.jpg"
-                  class="slider-img d-none d-md-block"
-                  alt="..."
-                  />
-            </div>
-            <div class="carousel-item">
-               <img
-                  src="assets/banner.jpg"
-                  class="slider-img d-none d-md-block"
-                  alt="..."
-                  />
-            </div>
-            <div class="carousel-item">
-               <img
-                  src="assets/banner.jpg"
-                  class="slider-img d-none d-md-block"
-                  alt="..."
-                  />
-            </div>
-         </div>
-      </div>
- 
-         <!------------------------------------------------------------------------------------ 
-         Form2 - Section
-         -------------------------------------------------------------------------------------->
+         <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="assets/header-ab-logo.png"
+                  class="img-fluid ab-logo"
+                  alt=""
+                />
+                <img
+                  src="assets/header-aw-logo.png"
+                  class="img-fluid aw-logo mx-2"
+                  alt=""
+                />
+              </a>
+              <div
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon">
+                  <img src="assets/nav-open.png" alt="" />
+                </span>
+              </div>
       
-         <div class="form2-bg">
-         <div class="form2-bg-container container">
-            <div class="form2-container">
-               <form
-                  class="container form-box-cont bg-dangr rounded-bottom"
-                  >
-                  <div class="row">
-                     <div class="form-col col-md-6">
-                        <div class="form2-group">
-                           <label for="first-name"
-                              >Hello, my first name is
-                           <span class="required"> *</span></label
-                              >
-                           <input
-                              class="placeholder"
-                              type="text"
-                              id="first-name"
-                              name="first-name"
-                              required
-                              placeholder=" First Name"
-                              autocomplete="off"
-                              />
-                        </div>
-                     </div>
-                     <div class="form-col col-md-6">
-                        <div class="form2-group">
-                           <label for="last-name">my last name is </label>
-                           <input
-                              class="placeholder"
-                              type="text"
-                              id="last-name"
-                              name="last-name"
-                              placeholder=" Last Name"
-                              autocomplete="off"
-                              />
-                        </div>
-                     </div>
+              <div class="nav collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-lg-none">
+                  <div class="search-bar">
+                    <div class="search-icon">
+                      <i class="fas fa-search"></i>
+                    </div>
+                    <input type="text" class="search-input" placeholder="Search" />
                   </div>
-                  <div class="row">
-                     <div class="form-col col-md-6">
-                        <div class="form2-group">
-                           <label for="contact"
-                              >Contact me on <span class="required"> *</span></label
-                              >
-                           <input
-                              class="placeholder"
-                              type="text"
-                              id="contact"
-                              name="contact"
-                              required
-                              placeholder=" Contact Number"
-                              autocomplete="off"
-                              />
-                        </div>
-                     </div>
-                     <div class="form-col col-md-6">
-                        <div class="form2-group">
-                           <label for="email"
-                              >Mail me at <span class="required"> *</span></label
-                              >
-                           <input
-                              class="placeholder"
-                              type="email"
-                              id="email"
-                              name="email"
-                              placeholder=" Email ID"
-                              required
-                              autocomplete="off"
-                              />
-                        </div>
-                     </div>
-                  </div>
-                  <div class="form2-group">
-                     <label for="identity"
-                        >Who am I<span class="required"> *</span></label
-                        >
-                     <select id="identity" name="identity" required>
-                        <option value="">My Background</option>
-                        <option value="student">Student</option>
-                        <option value="teacher">Teacher</option>
-                        <option value="professional">Professional</option>
-                        <option value="other">Other</option>
-                     </select>
-                  </div>
-                  <div class="form2-group">
-                     <label for="purpose">Purpose<span class="required"> *</span></label>
-                     <select id="purpose" name="purpose" required>
-                        <option value="">I need help with</option>
-                        <option value="inquiry">Inquiry</option>
-                        <option value="feedback">Feedback</option>
-                        <option value="support">Support</option>
-                        <option value="other">Other</option>
-                     </select>
-                  </div>
-                  <div class="form2-group">
-                     <label for="pin-code">Pin Code</label>
-                     <input
-                        class="placeholder"
-                        type="text"
-                        id="pin-code"
-                        name="pin-code"
-                        placeholder=" my area code"
-                        autocomplete="off"
-                        />
-                  </div>
-                  <div class="form2-group">
-                     <label for="message">What do you want to tell us ?</label>
-                     <input
-                        class="placeholder"
-                        type="text"
-                        id="message"
-                        name="message"
-                        placeholder=" type a message "
-                        autocomplete="off"
-                        />
-                  </div>
-                  <div class="button-form2">
-                     <button class="form2-btn col-12 col-sm-2 btn border">submit</button>
-                  </div>
-               </form>
+                </form>
+                <div class="navbar-links">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Inspiration</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Product</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Tools</a>
+                    </li>
+                  </ul>
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Store Locator</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Find a Contractor</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                      <a class="nav-link" href="#">
+                        <img src="assets/nav-search.png" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-         </div>
+          </nav>
+      
+
+    <!------------------------------------------------------------------------------------ 
+         Banner - Section
+         -------------------------------------------------------------------------------------->
+    <div class="aw-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1 class="aw-BannerHeading">Heading</h1>
+            <p class="aw-BannerPara">
+              Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu.
+            </p>
+          </div>
+        </div>
       </div>
-      <!------------------------------------------------------------------------------------ 
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+      Allwood - Section
+      -------------------------------------------------------------------------------------->
+
+    <div class="container p-5">
+      <div class="row">
+        <h1 class="aw-heading mb-2">
+          About <span class="aw-heading2">Allwood</span>
+        </h1>
+        <p class="aw-para">
+          Allwood is a range of luxury wood finishes from Grasim Industries Ltd
+          (Birla Paints Div.) which is part of the Aditya Birla Group, a global
+          conglomerate, in the league of Fortune 500 companies. The Allwood
+          range of wood finishes incorporates the latest Italian technology and
+          would strive to bring consumers the highest standards of quality and
+          finesse.
+        </p>
+        <p class="aw-para">
+          Our products have been formulated at ALCEA, Italy keeping in mind the
+          latest trends in the Indian Wood Coatings market. A home is a symbol
+          of aspirations, and our intention is to enhance it with durable
+          coatings that withstand the passage of time.
+        </p>
+        <p class="aw-para">
+          Our vision is to offer real guidance and support to consumers so that
+          they can choose the best wood coating solutions for their dream home
+        </p>
+      </div>
+      <div class="row mt-3">
+        <div class="col-6 col-md-3">
+          <img class="aw-image rounded" src="assets/about-awb1.png" alt="" />
+        </div>
+        <div class="col-6 col-md-3 mt-5">
+          <img class="aw-image rounded" src="assets/about-aw2.png" alt="" />
+        </div>
+        <div class="col-6 col-md-3">
+          <img class="aw-image rounded" src="assets/about-aw3.png" alt="" />
+        </div>
+        <div class="col-6 col-md-3 mt-5">
+          <img class="aw-image rounded" src="assets/about-aw4.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
+      ABG - Section
+      -------------------------------------------------------------------------------------->
+      <div class="abg-container">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="abg-textbox col-md-6">
+     
+               <h1 class="abg-about-abg-heading">About ABG</h1>
+               <h1 class="abg-about-abg-subheading">Entering paints business</h1>
+     
+               <p class="abg-about-abg-para">
+                 The Aditya Birla Group is entering the paints business through a
+                 new venture announced by flagship company Grasim Industries
+                 Ltd. The company plans to introduce the latest range of paint
+                 products in line with global mega-trends.
+               </p>
+               <p>
+                 The entry of Grasim in the paints sector will offer a wide choice
+                 to Indian consumers as the Company plans to introduce the
+                 latest range of paint products in line with global mega-trends.
+                 The Company’s entry into this high growth sector will help
+                 painters/ applicators and all traditional and emerging channel
+                 partners across India to expand their existing business and grow.
+               </p>
+             </div>
+             <div class="abg-about-abg-image col-md-6 ">
+               <img class="about-abg-image1" src="assets/about-abg-image.png" alt="">
+             </div>
+           </div>
+         </div>
+         </div>
+           
+
+    <!------------------------------------------------------------------------------------ 
+      Values - Section
+         -------------------------------------------------------------------------------------->
+         <div class="container py-5">
+            <div class="row align-items-center">
+              <div class="col-3">
+                <div>Our Mission</div>
+                <div>Our Values</div>
+                <div>Our Commitment</div>
+              </div>
+              <div class="col-9 shadow p-4">
+                <h1>Our Values</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat incididunt.</p>
+                <div class="row">
+                  <div class="col-2 p-2">
+                    <div class="p-5 bg-info"></div>
+                  </div>
+                  <div class="col-2 p-2">
+                    <div class="p-5 bg-info"></div>
+                  </div>
+                  <div class="col-2 p-2">
+                    <div class="p-5 bg-info"></div>
+                  </div>
+                  <div class="col-2 p-2">
+                    <div class="p-5 bg-info"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+
+    <!------------------------------------------------------------------------------------ 
+      Why - Section
+         -------------------------------------------------------------------------------------->
+         <div class="why-container">
+            <div class="container py-5 text-center text-light">
+              <div class="row ">
+                <h1 class="aw-why-heading">Why Allwood</h1>
+                <p class="aw-why-para">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad
+                  minim.
+                </p>
+              </div>
+              <div class="row justify-content-evenly">
+                <div class="mt-5 col-6 col-md-2">
+                  <h1 class="aw-why-icon"><img src="assets/why-icon1.png" alt=""></h1>
+                  <h4 class="aw-why-IconHeading">Feature 1</h4>
+                  <p  class="aw-why-IconPara">Sorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="mt-5 col-6 col-md-2">
+                    <h1 class="aw-why-icon"><img src="assets/why-icon2.png" alt=""></h1>
+                    <h4 class="aw-why-IconHeading">Feature 2</h4>
+                    <p  class="aw-why-IconPara">Sorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="mt-5 col-6 col-md-2">
+                    <h1 class="aw-why-icon"><img src="assets/why-icon1.png" alt=""></h1>
+                    <h4 class="aw-why-IconHeading">Feature 3</h4>
+                    <p  class="aw-why-IconPara">Sorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="mt-5 col-6 col-md-2">
+                  <h1 class="aw-why-icon"><img src="assets/why-icon2.png" alt=""></h1>
+                  <h4 class="aw-why-IconHeading">Feature 4</h4>
+                  <p  class="aw-why-IconPara">Sorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <!-- <div class="col-6 col-md-3 p-2">
+                  <div class="p-5 bg-warning"></div>
+              </div>
+              <div class="col-6 col-md-3 p-2">
+                  <div class="p-5 bg-warning"></div>
+              </div>
+              <div class="col-6 col-md-3 p-2">
+                  <div class="p-5 bg-warning"></div>
+              </div> -->
+              </div>
+            </div>
+          </div>
+
+
+    <!------------------------------------------------------------------------------------ 
+      Partner - Section
+          -------------------------------------------------------------------------------------->
+
+          <div class=" container ">
+            <h1 class="value-heading">Become an Allwood Partner</h1>
+            <p class="value-para">Allwood partner is an initiative for wood painters and contractors to help enhance their personal and professional skills by coming together as a community.   </p>
+             <div class="row ">
+         
+               <div class="col-md-3 ">
+                 <div class=" card aw-value-card">
+                   <img src="assets/dealers-aw-Image.png" alt="clear-gloss" class="card-img">
+                   <div class="card-body aw-value-cardbody">
+                 
+                     <h2 class="aw-value-title card-title">Allwood Italian PU Clear Gloss</h2>
+                     <p class="aw-value-discp card-description">onsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
+                     <button class="aw-value-button">Join THe Waitlist </button>
+                   </div>
+                 </div>
+               </div>
+         
+               <div class="col-md-3 ">
+                 <div class="card aw-value-card">
+                   <img src="assets/aw-paintContractor.png" alt="clear matt" class="card-img">
+                   <div class="card-body aw-value-cardbody"> 
+                     
+                
+                     <h2 class="aw-value-title card-title">Allwood Italian PU Clear Matt</h2>
+                     <p class="aw-value-discp card-description">Allwood Italian PU Clear is a luxury Italian wood finish which gives an ultra-rich finish and excellent durability to wooden surfaces. </p>
+                     <button class="aw-value-button">Join THe Waitlist</button>
+                   </div>
+                 </div>
+               </div>
+         
+               <div class="col-md-3 ">
+                 <div class="card aw-value-card">
+                   <img src="assets/aw-architect.png" alt="Clear Matt" class="card-img">
+                   <div class="card-body aw-value-cardbody">
+                     
+                     <h2 class="aw-value-title card-title">Allwood Italian PU White Matt</h2>
+                     <p class="card-description">Allwood Italian PU Clear is a luxury Italian wood finish which gives an ultra-rich finish and excellent durability to wooden surfaces. </p>
+                     <button class="aw-value-button">Join THe Waitlist </button>
+                   </div>
+                 </div>
+               </div>
+         
+               <div class="col-md-3 ">
+                 <div class="card aw-value-card">
+                   <img src="assets/aw-b2b.png" alt="Card Image 4" class="card-img">
+                   <div class="card-body aw-value-cardbody">
+                     
+                     <h2 class="card-title aw-value-title">Allwood Italian PU White Gloss</h2>
+                     <p class="aw-value-discp card-description">Allwood Italian PU Clear is a luxury Italian wood finish which gives an ultra-rich finish and excellent durability to wooden surfaces. </p>
+                     <button class="aw-value-button">Join THe Waitlist</button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+
+    <!------------------------------------------------------------------------------------ 
+      Form2 - Section
+         -------------------------------------------------------------------------------------->
+    <div class="form2-bg">
+      <div class="form2-bg-container container">
+        <div class="form2-container">
+          <form class="container form-box-cont bg-dangr rounded-bottom">
+            <div class="row">
+              <div class="form-col col-md-6 form2-gap1">
+                <div class="form2-group">
+                  <label for="first-name"
+                    >Hello, my first name is
+                    <span class="required"> *</span></label
+                  >
+                  <input
+                    class="placeholder"
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                    placeholder=" First Name"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="form-col col-md-6 form2-gap2">
+                <div class="form2-group">
+                  <label for="last-name">my last name is </label>
+                  <input
+                    class="placeholder"
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    placeholder=" Last Name"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+
+              <!-- <div class="row"> -->
+              <div class="form-col col-md-6 form2-gap1">
+                <div class="form2-group">
+                  <label for="contact"
+                    >Contact me on <span class="required"> *</span></label
+                  >
+                  <input
+                    class="placeholder"
+                    type="text"
+                    id="contact"
+                    name="contact"
+                    required
+                    placeholder=" Contact Number"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="form-col col-md-6 form2-gap2">
+                <div class="form2-group">
+                  <label for="email"
+                    >Mail me at <span class="required"> *</span></label
+                  >
+                  <input
+                    class="placeholder"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder=" Email ID"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+
+              <div class="form3-group">
+                <label for="identity"
+                  >Who am I<span class="required"> *</span></label
+                >
+                <select id="identity" name="identity" required>
+                  <option value="">My Background</option>
+                  <option value="student">Student</option>
+                  <option value="teacher">Teacher</option>
+                  <option value="professional">Professional</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form3-group">
+                <label for="purpose"
+                  >Purpose<span class="required"> *</span></label
+                >
+                <select id="purpose" name="purpose" required>
+                  <option value="">I need help with</option>
+                  <option value="inquiry">Inquiry</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="support">Support</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form3-group">
+                <label for="pin-code">Pin Code</label>
+                <input
+                  class="placeholder"
+                  type="text"
+                  id="pin-code"
+                  name="pin-code"
+                  placeholder=" my area code"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form2-group">
+                <label for="message">What do you want to tell us ?</label>
+                <input
+                  class="form2-placeholder placeholder"
+                  type="text"
+                  id="message"
+                  name="message"
+                  placeholder=" type a message "
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form2-button-main">
+                <button class="form2-button">submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------ 
          Footer - Section
          -------------------------------------------------------------------------------------->
-      <footer class="footer">
-         <div class="container">
-            <div class="row footer-main">
-               <div class="footer-column col-md-4 col-12">
-                  <div class="footer-logos mt-4">
-                     <img class="footer-logo1 " src="assets/footer-ab-logo.png" alt="Brand Logo">
-                     <img class="footer-logo2" src="assets/footer-aw-logo.png" alt="Brand Logo"> 
-                  </div>
-                  <div class="footer-description ">
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamquis.</p>
-                  </div>
-                  <div class="social-icons">
-                     <a class="social-icon" href="https://www.facebook.com/">
-                     <img src="assets/fb-logo.png" alt="Facebook">
-                     </a>
-                     <a class="social-icon" href="https://www.instagram.com/">
-                     <img src="assets/insta-logo.png" alt="Instagram">
-                     </a>
-                     <a class="social-icon" href="https://twitter.com/">
-                     <img src="assets/twitter-logo.png" alt="Twitter">
-                     </a>
-                  </div>
-               </div>
-               <div class="footer-link col-md-1 col-4">
-                  <ul class="footer-links">
-                     <li class="footer-head">
-                        <h6>Inspiration</h6>
-                     </li>
-                     <li><a href="#">Link 2</a></li>
-                     <li><a href="#">Link 3</a></li>
-                     <li><a href="#">Link 4</a></li>
-                     <li><a href="#">Link 5</a></li>
-                  </ul>
-               </div>
-               <div class="footer-link col-md-1 col-4">
-                  <ul class="footer-links">
-                     <li class="footer-head">Products</li>
-                     <li><a href="#">Link 2</a></li>
-                     <li><a href="#">Link 3</a></li>
-                     <li><a href="#">Link 4</a></li>
-                     <li><a href="#">Link 5</a></li>
-                  </ul>
-               </div>
-               <div class="footer-link col-md-1 col-4">
-                  <ul class="footer-links">
-                     <li class="footer-head">About Us</li>
-                     <li><a class="footer-a" href="#">Link 2</a></li>
-                     <li><a class="footer-a" href="#">Link 3</a></li>
-                     <li><a class="footer-a" href="#">Link 4</a></li>
-                     <li><a class="footer-a" href="#">Link 5</a></li>
-                  </ul>
-               </div>
-               <div class="footer-link col-md-1 col-4">
-                  <ul class="footer-links">
-                     <li class="footer-head">Tools</li>
-                     <li><a href="#">Link 2</a></li>
-                     <li><a href="#">Link 2</a></li>
-                     <li><a href="#">Link 2</a></li>
-                     <li><a href="#">Link 2</a></li>
-                  </ul>
-               </div>
-               <div class="footer-link col-md-2 col-8">
-                  <ul class="footer-links">
-                     <li class="footer-head">Store Locator</li>
-                     <li><a href="#">Link 2</a></li>
-                     <br>
-                     <li>Find a Contractor
-                     </li>
-                     <li><a href="#">Link 5</a></li>
-                  </ul>
-               </div>
-               <div class="footer-link col-md-2 col-12">
-                  <ul class="footer-links">
-                     <li class="footer-head">Contact Us</li>
-                     <li><a href="#">info@form.com</a></li>
-                     <li><a href="#">Helpline : 1800 120 6787 <br>
-                        6116 Willa River Suite 610</a>
-                     </li>
-                  </ul>
-               </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer-main">
+          <div class="footer-column col-md-4 col-12">
+            <div class="footer-logos mt-4">
+              <img
+                class="footer-logo1"
+                src="assets/footer-ab-logo.png"
+                alt="Brand Logo"
+              />
+              <img
+                class="footer-logo2"
+                src="assets/footer-aw-logo.png"
+                alt="Brand Logo"
+              />
             </div>
-         </div>
-         <div class="container-fluid">
-            <div class="footer-terms-row row p-2">
-               <div class="col-5 col-md-3 text-center">
-                  Terms and condition
-               </div>
-               <div class="col-md-5 d-none d-md-block"></div>
-               <div class="col-7 col-md-4 text-center">
-                  ©2023 Allwood | All right reserve
-               </div>
+            <div class="footer-description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniamquis.
+              </p>
             </div>
-         </div>
-         </div>
-      </footer>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="index.js"></script>
+            <div class="social-icons">
+              <a class="social-icon" href="#">
+                <img src="assets/fb-logo.png" alt="Facebook" />
+              </a>
+              <a class="social-icon" href="#">
+                <img src="assets/insta-logo.png" alt="Instagram" />
+              </a>
+              <a class="social-icon" href="#">
+                <img src="assets/twitter-logo.png" alt="Twitter" />
+              </a>
+            </div>
+          </div>
+          <div class="footer-link col-md-1 col-4">
+            <ul class="footer-links">
+              <li class="footer-head">
+                <h6>Inspiration</h6>
+              </li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+              <li><a href="#">Link 5</a></li>
+            </ul>
+          </div>
+          <div class="footer-link col-md-1 col-4">
+            <ul class="footer-links">
+              <li class="footer-head">Products</li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+              <li><a href="#">Link 5</a></li>
+            </ul>
+          </div>
+          <div class="footer-link col-md-1 col-4">
+            <ul class="footer-links">
+              <li class="footer-head">About Us</li>
+              <li><a class="footer-a" href="#">Link 2</a></li>
+              <li><a class="footer-a" href="#">Link 3</a></li>
+              <li><a class="footer-a" href="#">Link 4</a></li>
+              <li><a class="footer-a" href="#">Link 5</a></li>
+            </ul>
+          </div>
+          <div class="footer-link col-md-1 col-4">
+            <ul class="footer-links">
+              <li class="footer-head">Tools</li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="footer-link col-md-2 col-8">
+            <ul class="footer-links">
+              <li class="footer-head">Store Locator</li>
+              <li><a href="#">Link 2</a></li>
+              <br />
+              <li>Find a Contractor</li>
+              <li><a href="#">Link 5</a></li>
+            </ul>
+          </div>
+          <div class="footer-link col-md-2 col-12">
+            <ul class="footer-links">
+              <li class="footer-head">Contact Us</li>
+              <li><a href="#">info@form.com</a></li>
+              <li>
+                <a href="#"
+                  >Helpline : 1800 120 6787 <br />
+                  6116 Willa River Suite 610</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="footer-terms-row row p-2">
+          <div class="col-5 col-md-3 text-center">Terms and condition</div>
+          <div class="col-md-5 d-none d-md-block"></div>
+          <div class="col-7 col-md-4 text-center">
+            ©2023 Allwood | All right reserve
+          </div>
+        </div>
+      </div>
+    </footer>
 
-      <!------------------------------------------------------------------------------------ 
-         Bootstrap - JS
-         -------------------------------------------------------------------------------------->
-      <script
-         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-         crossorigin="anonymous"
-         ></script>
-      <script
-         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-         crossorigin="anonymous"
-         ></script>
-   </body>
-</html>F
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- OwlCarousel js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

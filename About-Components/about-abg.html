@@ -27,14 +27,120 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
+    
     <style>
+
+
+
+/* 1nd  font */
+
+@font-face {
+  font-family: 'font-red-hat-bold';
+  src: url('font-red-hat/RedHatDisplay-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'font-red-hat-medium';
+  src: url('font-red-hat/RedHatDisplay-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'font-red-hat-regular';
+  src: url('font-red-hat/RedHatDisplay-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'font-red-hat-light';
+  src: url('font-red-hat/RedHatDisplay-Light.ttf') format('truetype');
+}
+/* 2nd  font */
+
+@font-face {
+  font-family: 'font-kugi';
+  src: url('font-kuglile/Kugile_Demo.ttf') format('truetype');
+}
+
+.abg-textbox {
+    padding-right: 5%;
+    padding-left: 7%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;}
+
         .abg-container {
             background-color: #fff9f5;
+            
         }
         .abg-textbox {
             padding-right: 5%;
             padding-left: 7%;
+            height: 600px;
         }
+
+        .abg-about-abg-heading{
+          color: var(--brown-400, #4C301A);
+          /* Body/35px: Regular */
+          font-family: 'font-red-hat-regular', sans-serif;
+          font-size: 35px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 48px; /* 137.143% */
+        }
+
+        .abg-about-abg-subheading{
+          color: var(--brown-400, #4C301A);
+          /* Body/35px: Bold */
+          font-family: 'font-red-hat-bold', sans-serif;
+          font-size: 35px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 48px; /* 137.143% */
+        }
+        .abg-about-abg-para{
+          color: var(--neutral-neutral-800, #1F2937);
+
+          /* Body/18px: Regular */
+          font-family: 'font-red-hat-regular', sans-serif;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px; /* 155.556% */
+        }
+        @media (max-width: 768px) {
+          .about-abg-image1{
+            width: 100%;
+            height: auto;
+        }
+        .abg-about-abg-heading{
+            color: var(--brown-400, #4C301A);
+
+          /* Body/28px: Regular */
+          font-family: 'font-red-hat-regular', sans-serif;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 40px; /* 142.857% */
+        }
+        .abg-about-abg-subheading{
+          color: var(--brown-400, #4C301A);
+          /* Body/28px: Bold */
+          font-family: 'font-red-hat-bold', sans-serif;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 40px; /* 142.857% */
+        }
+        .abg-textbox {
+            padding-right: 5%;
+            padding-left: 7%;
+            height: auto;
+        }
+  }
+
+        
+
+
+
+/* font-family: 'font-red-hat-regular', sans-serif; */
+
     </style>
   </head>
 
@@ -43,9 +149,11 @@
     <div class="container-fluid">
       <div class="row">
         <div class="abg-textbox col-md-6">
-          <h1>About ABG</h1>
-          <h1><b>Entering paints business</b></h1>
-          <p>
+
+          <h1 class="abg-about-abg-heading">About ABG</h1>
+          <h1 class="abg-about-abg-subheading">Entering paints business</h1>
+
+          <p class="abg-about-abg-para">
             The Aditya Birla Group is entering the paints business through a
             new venture announced by flagship company Grasim Industries
             Ltd. The company plans to introduce the latest range of paint
@@ -60,7 +168,9 @@
             partners across India to expand their existing business and grow.
           </p>
         </div>
-        <div class="col-md-6 bg-success"></div>
+        <div class="abg-about-abg-image col-md-6 ">
+          <img class="about-abg-image1" src="assets/about-abg-image.png" alt="">
+        </div>
       </div>
     </div>
     </div>
