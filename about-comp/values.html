@@ -28,39 +28,302 @@
     />
 
     <style>
-       
+      .value-heading {
+        color: var(--brown-primary, #966239);
+        /* Header/36px: Regular */
+        font-family: "font-kugi";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 64px; /* 177.778% */
+      }
+
+      .value-para {
+        color: var(--neutral-neutral-800, #1f2937);
+        /* Body/18px: Regular */
+        font-family:"font-red-hat-regular";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 155.556% */
+      }
+
+      .value-link {
+        margin-bottom: 8px;
+        position: relative;
+      }
+
+      .value-link a {
+        color: var(--neutral-neutral-500, #6b7280);
+        /* Body/18px: Light */
+        font-family: "font-red-hat-light";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px; /* 155.556% */
+        position: relative;
+        z-index: 1;
+        transition: all 0.3s ease;
+      }
+
+      .value-link a.active {
+        color: var(--brown-primary, #966239);
+        /* Body/28px: Bold */
+        font-family: "font-red-hat-bold";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 142.857% */
+        transform: scale(1.2);
+      }
+
+      .value-link a.active ~ .progress-bar {
+        background-color: var(--brown-primary, #966239);
+      }
+
+      .value-link a:not(.active) {
+        color: var(--neutral-neutral-500, #c9ccd2);
+      }
+
+      .progress-bar {
+        position: absolute;
+        top: 50%;
+        left: -36px;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 32px;
+        background-color: var(--neutral-neutral-500, #c9ccd2);
+        z-index: 0;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+      }
+
+      .value-card {
+        display: none;
+      }
+
+      .value-card.active {
+        display: block;
+      }
+      @media (max-width: 768px) {
+        .value-link {
+          display: flex;
+          align-items: center;
+          margin-bottom: 8px;
+        }
+
+        .value-link a.active {
+          color: var(--brown-primary, #966239);
+          /* Body/18px: Bold */
+          font-family: "font-red-hat-bold";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 28px; /* 155.556% */
+        }
+
+        .value-link a:not(.active) {
+          color: var(--neutral-neutral-500, #6b7280);
+          /* Body/18px: Light */
+          font-family: "font-red-hat-light";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 28px; /* 155.556% */
+        }
+
+        .progress-bar {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 4px;
+          height: 32px;
+          background-color: var(--neutral-neutral-500, #c9ccd2);
+          z-index: 0;
+          border-radius: 10px;
+          transition: background-color 0.3s ease;
+        }
+
+        .value-link a.active ~ .progress-bar {
+          background-color: var(--brown-primary, #966239);
+        }
+      }
+
+  
     </style>
   </head>
 
   <body>
     <div class="container py-5">
       <div class="row align-items-center">
-        <div class="col-3">
-          <div>Our Mission</div>
-          <div>Our Values</div>
-          <div>Our Commitment</div>
-        </div>
-        <div class="col-9 shadow p-4">
-          <h1>Our Values</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat incididunt.</p>
+        <div class="col-12 col-md-3">
           <div class="row">
-            <div class="col-2 p-2">
-              <div class="p-5 bg-info"></div>
+            <div class="col-4 col-md-11 value-link">
+              <a class="nav-link" href="#mission">Our Mission</a>
+              <div class="progress-bar"></div>
             </div>
-            <div class="col-2 p-2">
-              <div class="p-5 bg-info"></div>
+
+            <div class="col-4 col-md-11 value-link">
+              <a class="nav-link" href="#values">Our Values</a>
+              <div class="progress-bar"></div>
             </div>
-            <div class="col-2 p-2">
-              <div class="p-5 bg-info"></div>
+
+            <div class="col-4 col-md-11 value-link">
+              <a class="nav-link" href="#commitment">Our Commitment</a>
+              <div class="progress-bar"></div>
             </div>
-            <div class="col-2 p-2">
-              <div class="p-5 bg-info"></div>
+          </div>
+        </div>
+
+        <div class="col-11 col-md-9">
+          <div class="row">
+            <div id="mission" class="value-card p-3 active">
+              <h3 class="value-heading">Our Mission</h3>
+              <div class="col-12 value-para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Incidunt, nobis!
+              </div>
+              <div class="col-12 value-para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt, nulla molestias aperiam iure quaerat odio illo
+                accusantium pariatur, tempore nihil eos quod ut dolores, atque
+                laudantium excepturi beatae alias quibusdam!
+              </div>
+              <div class="col-12 value-para">
+                <div class="row flex-row-reverse">
+                  <div class="col-6 col-md-2 order-md-1"></div>
+                  <div class="col-6 col-md-2 order-md-1"></div>
+
+                  <div class="col-6 col-md-2 order-md-1">
+                    <img src="assets/aw-value-icon1.png" alt="" />
+                    <p class="value-icon-text">Value 4</p>
+                  </div>
+                  <div class="col-6 col-md-2 order-md-1">
+                    <img src="assets/aw-value-icon2.png" alt="" />
+                    <p class="value-icon-text">Value 3</p>
+                  </div>
+                  <div class="col-6 col-md-2 order-md-1">
+                    <img src="assets/aw-value-icon1.png" alt="" />
+                    <p class="value-icon-text">Value 2</p>
+                  </div>
+                  <div class="col-6 col-md-2 order-md-2">
+                    <img src="assets/aw-value-icon2.png" alt="" />
+                    <p class="value-icon-text">Value 1</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="values" class="value-card p-3">
+              <h3 class="value-heading">Our Values</h3>
+              <div class="col-12 value-para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Incidunt, nobis!
+              </div>
+              <div class="col-12 value-para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt, nulla molestias aperiam iure quaerat odio illo
+                accusantium pariatur, tempore nihil eos quod ut dolores, atque
+                laudantium excepturi beatae alias quibusdam!
+              </div>
+              <div class="col-12 value-para">
+                <div class="row flex-row-reverse">
+                  <div class="col-6 col-md-2 order-md-1"></div>
+                  <div class="col-6 col-md-2 order-md-1"></div>
+
+                  <div class="col-6 col-md-2 order-md-1">
+                    <img src="assets/aw-value-icon1.png" alt="" />
+                    <p>Value 4</p>
+                  </div>
+                  <div class="col-6 col-md-2 order-md-1">
+                    <img src="assets/aw-value-icon2.png" alt="" />
+                    <p>Value 3</p>
+                  </div>
+                  <div class="col-6 col-md-2 order-md-1">
+                    <img src="assets/aw-value-icon1.png" alt="" />
+                    <p>Value 2</p>
+                  </div>
+                  <div class="col-6 col-md-2 order-md-2">
+                    <img src="assets/aw-value-icon2.png" alt="" />
+                    <p>Value 1</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="commitment" class="value-card p-3">
+              <h3 class="value-heading">Our Commitment</h3>
+              <div class="col-12 value-para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Incidunt, nobis!
+              </div>
+              <div class="col-12 value-para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt, nulla molestias aperiam iure quaerat odio illo
+                accusantium pariatur, tempore nihil eos quod ut dolores, atque
+                laudantium excepturi beatae alias quibusdam!
+              </div>
+              <div class="col-12 value-para">
+                <div class="row flex-row-reverse">
+                  <div class="col-6 col-md-2 order-md-1"></div>
+                  <div class="col-6 col-md-2 order-md-1"></div>
+
+                  <div class="col-6 col-md-2 order-md-1">
+                    <img src="assets/aw-value-icon1.png" alt="" />
+                    <p>Value 4</p>
+                  </div>
+                  <div class="col-6 col-md-2 order-md-1">
+                    <img src="assets/aw-value-icon2.png" alt="" />
+                    <p>Value 3</p>
+                  </div>
+                  <div class="col-6 col-md-2 order-md-1">
+                    <img src="assets/aw-value-icon1.png" alt="" />
+                    <p>Value 2</p>
+                  </div>
+                  <div class="col-6 col-md-2 order-md-2">
+                    <img src="assets/aw-value-icon2.png" alt="" />
+                    <p>Value 1</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".value-link a").click(function (e) {
+          e.preventDefault();
+          var target = $(this).attr("href");
+          $(".value-card").removeClass("active");
+          $(target).addClass("active");
+          $(".value-link a").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+    
+    <script>
+      $(document).ready(function () {
+        // Add 'active' class to the default section and link
+        $("#mission").addClass("active");
+        $(".value-link a[href='#mission']").addClass("active");
+
+        $(".value-link a").click(function (e) {
+          e.preventDefault();
+          var target = $(this).attr("href");
+          $(".value-card").removeClass("active");
+          $(target).addClass("active");
+          $(".value-link a").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

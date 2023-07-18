@@ -364,6 +364,10 @@
 
 
 
+
+
+       
+
 /* -------------------------------------------------------------------------
       # Why - Section
       -------------------------------------------------------------------------*/
@@ -422,7 +426,10 @@
       # Partner - Section
       -------------------------------------------------------------------------*/
 
-      .aw-value-card {
+      /*------------------------- partner desk css */
+  
+
+      .aw-partner-card {
         position: relative;
         overflow: hidden;
         height: 440px;
@@ -431,7 +438,7 @@
         width: 300px;
       }
   
-      .aw-value-cardbody{
+      .aw-partner-cardbody{
       position: absolute;
       bottom: 0;
       left: 0;
@@ -443,12 +450,12 @@
       transform: translateY(65%);
       }
   
-      .card:hover .aw-value-cardbody{
+      .card:hover .aw-partner-cardbody{
         transform: translateY(0);
        
       }
   
-      .aw-value-title  {
+      .aw-partner-title  {
      color: var(--neutral-neutral-0, #FFF);
       /* Body/23px: Medium */
       font-family: 'font-red-hat-medium', sans-serif;
@@ -458,7 +465,7 @@
       line-height: 36px; /* 156.522% */
   }
   
-      .aw-value-discp  {
+      .aw-patner-discp  {
           color: var(--neutral-neutral-300, #D1D5DB);
           /* Body/14px: Medium */
           font-family: 'font-red-hat-medium', sans-serif;
@@ -468,7 +475,7 @@
           line-height: 24px; /* 171.429% */
           }
   
-      .aw-value-button , .aw-value-button:hover {
+      .aw-partner-button , .aw-partner-button:hover {
           border-radius: 4px;
           background: var(--button-gradient, linear-gradient(90deg, #AC5821 0%, #E1722A 100%));
           border: none;
@@ -495,7 +502,7 @@
    
    
      
-      .value-heading{
+      .partner-heading{
           color: var(--brown-primary, #966239);
           text-align: center;
   
@@ -506,7 +513,7 @@
           font-weight: 400;
           line-height: 64px; /* 177.778% */
       }
-      .value-para{
+      .partner-para{
           color: var(--neutral-neutral-500, #6B7280);
           text-align: center;
   
@@ -519,6 +526,157 @@
           line-height: 28px; /* 155.556% */
       }
   
+
+
+       /*---------------------------- partner mbl css   */
+
+
+      
+      /* css starts  */
+      .aw-partner-card {
+        position: relative;
+        overflow: hidden;
+        height: 440px;
+        border-radius: 2px;
+        transition: 0.5s;
+        width: 100%;
+      }
+  
+      .aw-partner-cardbody{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(179deg, rgba(0, 0, 0, 50.100) 0%, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.88) 100%);
+      color: #FFF;
+      padding: 20px;
+      transition: transform 0.5s;
+      transform: translateY(70%);
+      }
+  
+      .card:hover .aw-partner-cardbody{
+        transform: translateY(0);
+       
+      }
+  
+      .aw-partner-title  {
+     color: var(--neutral-neutral-0, #FFF);
+      /* Body/23px: Medium */
+      font-family: 'font-red-hat-medium', sans-serif;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 36px; /* 156.522% */
+  }
+  
+      .aw-partner-discp  {
+          color: var(--neutral-neutral-300, #D1D5DB);
+          /* Body/14px: Medium */
+          font-family: 'font-red-hat-medium', sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px; /* 171.429% */
+          }
+  
+      .aw-partner-button , .aw-partner-button:hover {
+          border-radius: 4px;
+          background: var(--button-gradient, linear-gradient(90deg, #AC5821 0%, #E1722A 100%));
+          border: none;
+          color: #FFF;
+          padding: 10px 30px;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          text-align: center;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          
+          color: var(--neutral-neutral-0, #FFF);
+        
+          /* CTA/12px: Medium */
+          font-family: 'font-red-hat-medium', sans-serif;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px; /* 166.667% */
+          letter-spacing: 2px;
+          text-transform: uppercase;
+      }
+   
+   
+     
+    
+        /* css end */
+  
+  
+  
+  
+  
+        .card-img-top {
+              height: 280px;
+          }
+  
+          .card {
+              box-shadow: none !important;
+          }
+  
+        .owl-carousel .owl-nav {
+          position: absolute;
+          top: 30%;
+          transform: translateY(-50%);
+          width: 100%;
+        }
+  
+        .owl-carousel .owl-nav .owl-prev,
+        .owl-carousel .owl-nav .owl-next {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background: rgba(0, 0, 0, 0.5);
+          padding: 5px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+  
+        .owl-carousel .owl-nav .owl-prev img,
+        .owl-carousel .owl-nav .owl-next img {
+          width: 30px;
+          height: 30px;
+        }
+  
+        .owl-carousel .owl-nav .owl-prev {
+          left: -50px;
+        }
+  
+        .owl-carousel .owl-nav .owl-next {
+          right: -50px;
+        }
+  
+        .row > * {
+          padding-right: 0;
+          padding-left: 20px;
+        }
+  
+        @media (max-width: 768px) {
+          .owl-stage {
+            margin-left: 0%; /* Adjust the left margin to 15% */
+          }
+          .owl-stage .owl-item:last-child {
+            width: 105%; /* Adjust the width to 105% */
+            margin-right: 0%; /* Adjust the right margin to 15% */
+          }
+          .owl-carousel .owl-nav {
+            display: none; /* Hide the navigation buttons on mobile */
+          }
+          .owl-carousel .owl-item {
+            margin-right: 0px;
+          }
+        }
+
+
+
 
 /* -------------------------------------------------------------------------
       # Form2 - Section
