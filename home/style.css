@@ -26,7 +26,6 @@
 /* -------------------------------------------------------------------------
       # Navbar - Section 
       -------------------------------------------------------------------------*/
-
       .navbar {
         background-color: transparent ;
       }
@@ -81,7 +80,8 @@
         padding: 5px 10px;
         margin-top: 15px;
         margin-bottom: 5px;
-        width: 160%;
+        margin-left: 5px;
+       
       }
       
       .search-input {
@@ -129,12 +129,9 @@
         filter: brightness(0.75) contrast(0.9) sepia(0.2);
         mix-blend-mode: multiply;
       }
-        
-      
         .nav .navbar-links {
           display: flex;
-          flex-wrap: wrap;
-          gap: 30px;
+       
           justify-content: space-evenly;
         }
       
@@ -142,13 +139,55 @@
           color: var(--neutral-neutral-500, #6b7280);
           text-align: left;
           font-family: Red Hat Display;
-          font-size: 18px;
+          font-size: 15px;
           font-style: normal;
           font-weight: 500;
-          line-height: 20px;
+          line-height: 18px;
       }
+      .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #6b7280;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        width: 100%;
+        margin: 10px;
+           
+    }
       }
-      
+      @media only screen and (min-width: 300){
+        .nav .navbar-links {
+          display: flex;
+          /* flex-wrap: wrap; */
+          /* gap: 30px; */
+          justify-content: space-evenly;
+      }
+      .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #6b7280;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+           
+    }
+    .nav .nav-link {
+            color: var(--neutral-neutral-500, #6B7280);
+      text-align: center;
+
+      /* Body/18px: Medium */
+      font-family: Red Hat Display;
+      font-size: 12x;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 155.556% */
+          }
+}      
 /* -------------------------------------------------------------------------
       # Carousel
       -------------------------------------------------------------------------*/
